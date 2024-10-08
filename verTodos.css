@@ -1,0 +1,125 @@
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-family: "Edu AU VIC WA NT Dots", cursive;
+  letter-spacing: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+  color: #007bff;
+  margin: 20px 0;
+}
+
+/* Container dos produtos */
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.produto-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.produto-card:hover {
+  transform: translateY(-10px);
+}
+
+.produto-card h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.produto-card p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.produto-card .descricao {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.produto-card strong {
+  color: #333;
+}
+
+/* Rodapé */
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+/* Layout responsivo */
+@media (max-width: 768px) {
+  .produtos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produto-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
